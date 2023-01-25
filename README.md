@@ -105,15 +105,19 @@ This app can be accessed live via [skyward-assignment.netlify.app](https://skywa
 
 In order to complete the assignment in roughly a few hours, there were certain design considerations that I omitted for the sake of time.
 
-First, I typically include linting (ESlint - AirBnB styling), testing (Jest), in order to keep my project scaleable. I have begun exploring TypeScript for its static typing. Given more time, I would implement these tools in the begining.
+- **There is an where the state does not get updated on the search button first click, which requires users to double click (or double press the enter key). I plan on revisiting this issue when I get the time!**
 
-Second, for small-medium size projects, I typically breakdown my `src` folder structure into `assets` (images, etc.), `components` (buttons, nav, etc.), `pages` (landing, about, etc.), `hooks` (useEffects, useRefs, custom hooks etc.) in order to better abstract my codebase into modular pieces. But for the sake of time, I kept all my hooks and functions within the main `app.jsx` file and passed down relevant hooks and state down.
+- I typically include linting (ESlint - AirBnB styling), testing (Jest), in order to keep my project scaleable. I have begun exploring TypeScript for its static typing. Given more time, I would implement these tools in the begining.
 
-Third, when using `fetch` or any type of API calls, I typically try to stay away from fetching data within a `useEffect` and jump over to React Query. This state management library is extremely helpful behind the scenes and is useful when scaling apps. But to keep things simple, the `useEffect` hook gets the job done!
+- For small-medium size projects, I typically breakdown my `src` folder structure into `assets` (images, etc.), `components` (buttons, nav, etc.), `pages` (landing, about, etc.), `hooks` (useEffects, useRefs, custom hooks etc.) in order to better abstract my codebase into modular pieces. But for the sake of time, I kept all my hooks and functions within the main `app.jsx` file and passed down relevant hooks and state down.
 
-Fourth, with `useEffect`, I typically try to abstract these hooks to be more specific by creating them instead as custom hooks and import them into components/pages only when required. This helps to reduce overall code cleanliness and impact of change.
+- When using `fetch` or any type of API calls, I typically try to stay away from fetching data within a `useEffect` and jump over to React Query. This state management library is extremely helpful behind the scenes and is useful when scaling apps. But to keep things simple, the `useEffect` hook gets the job done!
 
-Lastly, I would love to be able to add more custom animations and features. One idea would be to display a new background color/image based on the current weather conditions(ie. sunny - bright orange). I also was considering deconstructing the Skyward website traveling cloud animation from the hero section but left it out due to time.
+- With `useEffect`, I typically try to abstract these hooks to be more specific by creating them instead as custom hooks and import them into components/pages only when required. This helps to reduce overall code cleanliness and impact of change.
+
+- To further optimize the search feature, currently only number inputs are vaild but I would like to add more input validation (min length/max length, etc.).
+
+- I would love to be able to add more custom animations and features. One idea would be to display a new background color/image based on the current weather conditions(ie. sunny - bright orange). I also was considering deconstructing the Skyward website traveling cloud animation from the hero section but left it out due to time.
 
 ## Design Process:
 
