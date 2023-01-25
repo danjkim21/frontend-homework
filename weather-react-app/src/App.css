@@ -1,0 +1,123 @@
+/* General App Styling */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container_title,
+.card_title {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 400;
+}
+
+/* Heading Component Styling */
+.header {
+  width: 100%;
+  max-width: 1050px;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 32.5px;
+  margin-right: 1rem;
+}
+.app_name {
+  margin-right: auto;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.search_input {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+  padding-left: 6px;
+}
+.search_btn {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+/* Weather Main Component Styling */
+.container_weather-main {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+.location_current {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.temp_current {
+  display: block;
+  font-size: 2.5rem;
+}
+.tempRange_current {
+  font-weight: 500;
+}
+.high_current {
+  margin-right: 6px;
+}
+
+/* Weather Forecast Component Styling */
+.container_weather-forecast {
+  margin: 0 2rem 2rem 2rem;
+  padding: 1rem;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  border-radius: 4px;
+}
+.container_header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+}
+.container_body {
+  display: flex;
+  text-align: center;
+}
+.forecast_daily-item {
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title_date {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.temp_daily {
+  font-weight: 500;
+}
+
+/* Weather Expanded Component Styling */
+.container_weather-expanded {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Card Component Styling */
+.card {
+  height: 155px;
+  width: 155px;
+  padding: 1rem;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  border-radius: 4px;
+}
+.card_body {
+  font-size: 1.75rem;
+}
+
+/* Media Queries - Mobile Responsiveness */

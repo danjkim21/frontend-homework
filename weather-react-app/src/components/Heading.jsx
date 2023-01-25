@@ -1,3 +1,4 @@
+import logo from '../assets/skyward-logo.svg';
 import '../App.css';
 
 function Heading() {
@@ -5,7 +6,8 @@ function Heading() {
 
   return (
     <header className='header'>
-      <span className='app_name'>Skyward Assessment</span>
+      <img className='logo' src={logo} alt='Skyward Logo' />
+      <span className='app_name'>SKYWARD</span>
       <form className='search_form'>
         <input
           className='search_input'
@@ -14,11 +16,7 @@ function Heading() {
           id='zipCode'
           placeholder='Enter zip code'
         />
-        <input
-          className='search_btn'
-          type='submit'
-          // value='&#8981;'
-        />
+        <input className='search_btn' type='submit' value='&#8981;' />
       </form>
     </header>
   );
