@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useState } from 'react';
 import Heading from './components/Heading';
 import WeatherMain from './components/WeatherMain';
@@ -5,7 +6,6 @@ import WeatherForecast from './components/WeatherForecast';
 import BtnToggle from './components/BtnToggle';
 import WeatherExpanded from './components/WeatherExpanded';
 import './App.css';
-import { useEffect } from 'react';
 
 function App() {
   const apiKey = import.meta.env.VITE_API_KEY;
@@ -45,6 +45,7 @@ function App() {
     }
   };
 
+  // gets and renders default data - NY
   useEffect(() => {
     const getInitialData = async (lat, lon) => {
       try {
@@ -82,11 +83,15 @@ function App() {
     }
   };
 
+  // Helper function - toggles extra weather data on button click
   const toggleExpandedData = (e) => {
     e.preventDefault();
     setIsActive((currentActive) => !currentActive); // ! - flips the boolean val
   };
 
+  // Helper function - converts unix format to date and time in an object
+  // input - num
+  // output - obj {dateConv: string, timeConv: string}
   const getDateTimeFromUnix = (unix) => {
     const dateObject = new Date(unix * 1000);
     const dateConv = dateObject.toLocaleDateString('en-US');

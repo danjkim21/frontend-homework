@@ -1,10 +1,7 @@
 import logo from '../assets/skyward-logo.svg';
 import '../App.css';
-import { useState } from 'react';
 
 function Heading({ handleSubmit }) {
-  // TODO: add states and pass down useEffects as props to get input from search form
-
   return (
     <header className='header'>
       <img className='logo' src={logo} alt='Skyward Logo' />
