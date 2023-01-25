@@ -1,4 +1,3 @@
-import WeatherForecastItem from './WeatherForecastItem';
 import '../App.css';
 
 function WeatherForecast({ dataDaily, getDateTimeFromUnix }) {
@@ -22,10 +21,9 @@ function WeatherForecast({ dataDaily, getDateTimeFromUnix }) {
   return (
     <section className='container container_weather-forecast'>
       <section className='container_header'>
-        <h2 className='container_title'>7-Day Forecast</h2>
+        <h2 className='container_title'>7-DAY FORECAST</h2>
       </section>
       <section className='container_body forecast_daily-body'>
-        {/* TODO: daily forecasts - incl. day, icon, temp */}
         {forecast}
       </section>
     </section>

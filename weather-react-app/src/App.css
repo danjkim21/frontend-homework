@@ -7,7 +7,7 @@
 }
 .container_title,
 .card_title {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.65);
   font-weight: 400;
 }
@@ -93,6 +93,7 @@
   border-radius: 4px;
 }
 .container_header {
+  padding-bottom: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.55);
 }
 .container_body {
@@ -115,6 +116,7 @@
 
 /* Weather Expanded Component Styling */
 .container_weather-expanded {
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -133,6 +135,24 @@
 }
 .card_body {
   font-size: 1.75rem;
+  line-height: 2rem;
 }
 
 /* Media Queries - Mobile Responsiveness */
+/* sm - md */
+@media screen and (max-width: 655px) {
+  /* Forecast Component */
+  .container_weather-forecast {
+    width: 300px;
+  }
+  .container_body {
+    flex-direction: column;
+  }
+  .forecast_daily-item {
+    flex-direction: row;
+    align-items: center;
+  }
+  .weatherIcon_daily {
+    height: 50px;
+  }
+}
