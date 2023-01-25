@@ -8,7 +8,6 @@ import './App.css';
 import { useEffect } from 'react';
 
 function App() {
-  // TODO : add states and useEffects (get lat-log from zipcode, get weather data)
   const apiKey = import.meta.env.VITE_API_KEY;
   let [isActive, setIsActive] = useState(false);
   let [zip, setZip] = useState(10001);
@@ -18,8 +17,6 @@ function App() {
   let [country, setCountry] = useState('US');
   let [dataCurrent, setDataCurrent] = useState([]);
   let [dataDaily, setDataDaily] = useState([]);
-  console.log(dataCurrent);
-  console.log(dataDaily);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,7 +29,7 @@ function App() {
   const getCoordsFromZip = async (zip) => {
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/zip?zip=${zip}&appid=${apiKey}`
+        `https://api.openweathermap.org/geo/1.0/zip?zip=${zip}&appid=${apiKey}`
       );
       if (!response.ok) {
         throw new Error(response.statusText);
@@ -47,6 +44,7 @@ function App() {
       console.error(err);
     }
   };
+
   useEffect(() => {
     const getInitialData = async (lat, lon) => {
       try {
