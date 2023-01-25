@@ -122,25 +122,25 @@ I start all my projects by first laying out all the project requirements (data, 
 ### MVP Ideation
 
 <p align="center">
-  <img src="weather-react-app/src/assets/skyward-app-1.jpg" width="75%" alt="assignment screenshot"/>
+  <img src="weather-react-app/src/assets/Skyward-app-1.jpg" width="75%" alt="assignment screenshot"/>
 </p>
 
 ### App Flow/Logic
 
 <p align="center">
-  <img src="weather-react-app/src/assets/skyward-app-2.jpg" width="75%" alt="assignment screenshot"/>
+  <img src="weather-react-app/src/assets/Skyward-app-2.jpg" width="75%" alt="assignment screenshot"/>
 </p>
 
 ### App Design
 
 <p align="center">
-  <img src="weather-react-app/src/assets/skyward-app-3.jpg" width="75%" alt="assignment screenshot"/>
+  <img src="weather-react-app/src/assets/Skyward-app-3.jpg" width="75%" alt="assignment screenshot"/>
 </p>
 
 ## Contact
 
 Daniel Kim - dan.jkim21@gmail.com
 
-Live Link: [https://ardb.vercel.app/](https://ardb.vercel.app/)
+Live Link: [https://skyward-assignment.netlify.app/](https://skyward-assignment.netlify.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
