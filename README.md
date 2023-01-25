@@ -57,7 +57,7 @@ The project was heavily inspired by the iOS weather app. I just really like the 
   - Pressure
   - Sunrise/Sunset Time
 
-- Show the 7 Day forecast
+- Show the 7 Day forecast (assumption: data includes 8 Days--which includes current--so I displayed all 8 days)
 
 <!-- GETTING STARTED -->
 
